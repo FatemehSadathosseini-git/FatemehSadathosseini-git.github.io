@@ -1,7 +1,5 @@
 Fatemeh Sadat Hosseini
 
-[Contact Information - Phone Number | Email Address | LinkedIn Profile URL (Optional) | Location: Potsdam, Brandenburg, Germany]
-
 **Summary**
 
 Highly motivated and detail-oriented linguist with a strong foundation in empirical and theoretical linguistics, psycholinguistics, and semantics. Currently pursuing an MSc in Linguistics at the University of Potsdam. Extensive experience in online English teaching and language instruction, coupled with a proven ability to translate between English and Persian. Holds an IELTS Academic C1 certification and possesses a keen interest in computational linguistics, language technology, and natural language processing.
