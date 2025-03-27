@@ -70,7 +70,6 @@ Highly motivated and detail-oriented linguist with a strong foundation in empiri
 * **Languages:** English (C1), Persian (Native), German (Basic)
 * **Linguistic Skills:** Psycholinguistics, Semantics, General Linguistics, Computational Linguistics, Language Technology, Natural Language Processing (NLP), Empirical and Theoretical Linguistics.
 * **Teaching Skills:** Online English Teaching, EFL/ESL Instruction, Curriculum Development, Student Engagement.
-* **Technical Skills:** Adobe Connect, Skype, Discord, Google Meet, Basic Python.
 * **Translation:** English to Persian and Persian to English.
 
 **Areas of Interest**
