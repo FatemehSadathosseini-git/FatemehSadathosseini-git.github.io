@@ -28,7 +28,7 @@ const Resume: React.FC = () => {
             sx={{
               width: '100%',
               height: { xs: 90, md: 200 },
-              backgroundImage: 'url("header.jpg")',
+              backgroundImage: 'url("./header.jpg")',
               backgroundSize: 'center',
               backgroundPosition: 'top',
               mb: { xs: 3, md: 4 },
@@ -48,7 +48,7 @@ const Resume: React.FC = () => {
                 border: '2px solid white',
               }}
             >
-              <img src="avatar.jpeg" alt="Profile" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
+              <img src="./avatar.jpeg" alt="Profile" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
             </Avatar>
           </Box>
           <Typography variant="h4" component="h1" gutterBottom>
