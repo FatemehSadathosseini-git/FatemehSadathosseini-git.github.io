@@ -1,0 +1,84 @@
+{
+  "name": "Fatemeh Sadat Hosseini",
+  "contact": {
+    "location": "Potsdam, Brandenburg, Germany",
+    "email": "fatemehsadathosseini.edu@gmail.com",
+    "linkedin": "https://de.linkedin.com/in/linguist-fa"
+  },
+  "summary": "Highly motivated and detail-oriented linguist with a strong foundation in empirical and theoretical linguistics, psycholinguistics, and semantics. Currently pursuing an MSc in Linguistics at the University of Potsdam. Extensive experience in online English teaching and language instruction, coupled with a proven ability to translate between English and Persian. Holds an IELTS Academic C1 certification and possesses a keen interest in computational linguistics, language technology, and natural language processing.",
+  "education": [
+    {
+      "institution": "University of Potsdam",
+      "degree": "Master of Science (MSc) in Linguistics: Empirical and Theoretical Foundations",
+      "dates": "Ongoing (Started October 2024)"
+    },
+    {
+      "institution": "Islamic Azad University North Tehran Branch",
+      "degree": "Bachelor of Arts (BA) in English Translation",
+      "dates": "Graduated: 2020"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Online English Teacher",
+      "company": "Self-Employed",
+      "dates": "January 2022 – Present",
+      "description": "Provide personalized online English instruction to individuals and small groups, focusing on reading, writing, and conversational skills. Utilize platforms such as Adobe Connect, Skype, Discord, and Google Meet for effective virtual teaching. Tailor teaching methods to meet the unique needs of each student."
+    },
+    {
+      "title": "English Teacher",
+      "company": "Safir Language Academy",
+      "dates": "June 2020 – June 2024",
+      "description": "Delivered engaging and effective English language instruction to diverse student populations. Applied linguistic strategies to enhance classroom collaboration and student engagement. Fostered a positive and supportive learning environment."
+    },
+    {
+      "title": "English Tutor",
+      "company": "SpeakOn Language Institute",
+      "dates": "January 2023 - March 2023",
+      "description": "Provided English tutoring services to students."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "IELTS Academic C1",
+      "issuer": "Cambridge University Press & Assessment"
+    },
+    {
+      "name": "Programming in Python",
+      "issuer": "Tehran Institute of Technology (MFT)"
+    },
+    {
+      "name": "Workshop Lecturer",
+      "issuer": "Alzahra University"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "C1"
+    },
+    {
+      "language": "German",
+      "proficiency": "C1"
+    },
+    {
+      "language": "Persian",
+      "proficiency": "Native"
+    }
+  ],
+  "skills": [
+    "Semantics",
+    "Computational Linguistics",
+    "Psycholinguistics",
+    "Programming",
+    "Python",
+    "Javascript",
+    "HTML",
+    "CSS",
+    "Teaching",
+    "Translation",
+    "Language Instruction",
+    "Natural Language Processing",
+    "Language Technology"
+  ]
+}
