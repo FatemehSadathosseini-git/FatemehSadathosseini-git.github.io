@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import CssBaseline from '@mui/material/CssBaseline'
-import Resume from './Resume.tsx'
+import Resume from './Resume'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

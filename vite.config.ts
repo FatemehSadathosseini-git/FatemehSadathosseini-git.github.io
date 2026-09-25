@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Use relative asset URLs so the built site works on GitHub Pages
-  // (both user sites like username.github.io and project sites).
-  base: './',
+  // User site FatemehSadathosseini-git.github.io is served from domain root,
+  // so absolute asset URLs are correct. Relative './' base + vite.svg-style
+  // absolute links were mixing modes and broke asset resolution on Pages.
+  base: '/',
   plugins: [react()],
 })

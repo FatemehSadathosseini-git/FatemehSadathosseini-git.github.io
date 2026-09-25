@@ -17,7 +17,7 @@ import {
   Link,
 } from '@mui/material';
 import { School, Work, CheckCircle, LocationOn, Email, LinkedIn, Language, Psychology, Code, SmartToy, Analytics, RecordVoiceOver, Group } from '@mui/icons-material';
-import KuromiBanner from './KuromiBanner.tsx';
+import KuromiBanner from './KuromiBanner';
 import resumeData from './resume.data.json';
 
 interface SkillItem {
@@ -98,7 +98,7 @@ const Resume: React.FC = () => {
                 zIndex: 1,
               }}
             >
-              <img src="./avatar.jpeg" alt="Profile" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
+              <img src="avatar.jpeg" alt="Profile" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
             </Avatar>
           </Box>
           <Typography variant="h4" component="h1" gutterBottom>
