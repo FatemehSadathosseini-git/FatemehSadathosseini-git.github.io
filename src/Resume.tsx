@@ -17,6 +17,7 @@ import {
   Link,
 } from '@mui/material';
 import { School, Work, CheckCircle, LocationOn, Email, LinkedIn, Language, Psychology, Code, SmartToy, Analytics, RecordVoiceOver, Group } from '@mui/icons-material';
+import KuromiBanner from './KuromiBanner.tsx';
 import resumeData from './resume.data.json';
 
 interface SkillItem {
@@ -47,30 +48,54 @@ function levelProps(level: string): { color: 'primary' | 'info' | 'default'; var
 const Resume: React.FC = () => {
   return (
     <Container maxWidth="md" sx={{ my: { xs: 0, md: 4 }, p: { xs: 0, md: 2 } }}>
-      <Paper elevation={3} sx={{ p: { xs: 2, md: 4 } }}>
+      <KuromiBanner />
+      <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, borderTop: '6px solid #ab47bc' }}>
         <Box display="flex" flexDirection="column" alignItems="center" mb={3}>
           <Box
             sx={{
               width: '100%',
-              height: { xs: 90, md: 200 },
-              backgroundImage: 'url("./header.jpg")',
-              backgroundSize: 'center',
-              backgroundPosition: 'top',
+              height: { xs: 120, md: 210 },
+              background: 'linear-gradient(100deg, #4a148c 0%, #7b1fa2 30%, #ab47bc 55%, #ec407a 80%, #ff8fb3 100%)',
               mb: { xs: 3, md: 4 },
               borderRadius: '8px',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'flex-end',
+              position: 'relative',
+              overflow: 'hidden',
+              boxShadow: '0 4px 18px rgba(123,31,162,0.35)',
             }}
           >
+            <Box
+              sx={{
+                position: 'absolute',
+                inset: 0,
+                opacity: 0.5,
+                backgroundImage:
+                  'radial-gradient(circle at 15% 25%, rgba(255,255,255,0.9) 0 2px, transparent 3px), radial-gradient(circle at 30% 70%, rgba(255,227,241,0.9) 0 2.5px, transparent 3.5px), radial-gradient(circle at 50% 30%, rgba(255,255,255,0.9) 0 2px, transparent 3px), radial-gradient(circle at 68% 65%, rgba(255,227,241,0.9) 0 2.5px, transparent 3.5px), radial-gradient(circle at 85% 30%, rgba(255,255,255,0.9) 0 2px, transparent 3px)',
+              }}
+            />
+            <Box
+              sx={{
+                position: 'absolute',
+                bottom: 8,
+                right: 14,
+                fontSize: { xs: 22, md: 30 },
+                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))',
+              }}
+            >
+              💜🎀✨
+            </Box>
             <Avatar
               sx={{
-                width: 80,
-                height: 80,
+                width: 96,
+                height: 96,
                 mb: -4,
-                bgcolor: '#3f51b5',
+                bgcolor: '#ab47bc',
                 fontSize: '2.5rem',
-                border: '2px solid white',
+                border: '3px solid white',
+                boxShadow: '0 0 0 4px #f3a8d2, 0 6px 16px rgba(171,71,188,0.55)',
+                zIndex: 1,
               }}
             >
               <img src="./avatar.jpeg" alt="Profile" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
@@ -235,7 +260,7 @@ const Resume: React.FC = () => {
           mt: { xs: 2, md: 4 },
           py: { xs: 2, md: 3 },
           height: { xs: 100, md: 150 },
-          background: 'linear-gradient(to bottom,rgb(61, 147, 190),rgb(29, 93, 112))',
+          background: 'linear-gradient(to bottom,#7b1fa2,#ec407a)',
           color: 'white',
           display: 'flex',
           flexDirection: 'column',
