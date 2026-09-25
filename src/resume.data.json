@@ -66,19 +66,165 @@
       "proficiency": "Native"
     }
   ],
+  "skillGroups": [
+    {
+      "title": "Core Linguistics",
+      "skills": [
+        {
+          "name": "Phonetics & IPA",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Morphology & Syntax",
+          "level": "Proficient"
+        },
+        {
+          "name": "Semantics & Pragmatics",
+          "level": "Proficient"
+        },
+        {
+          "name": "Psycholinguistics",
+          "level": "Proficient"
+        },
+        {
+          "name": "Corpus Linguistics",
+          "level": "Intermediate"
+        }
+      ]
+    },
+    {
+      "title": "Programming & Tools",
+      "skills": [
+        {
+          "name": "Python",
+          "level": "Learning"
+        },
+        {
+          "name": "Git & GitHub",
+          "level": "Learning"
+        },
+        {
+          "name": "Jupyter Notebooks",
+          "level": "Learning"
+        },
+        {
+          "name": "Regex",
+          "level": "Learning"
+        },
+        {
+          "name": "HTML / CSS / JavaScript",
+          "level": "Intermediate"
+        }
+      ]
+    },
+    {
+      "title": "NLP Libraries",
+      "skills": [
+        {
+          "name": "NLTK",
+          "level": "Learning"
+        },
+        {
+          "name": "spaCy",
+          "level": "Learning"
+        },
+        {
+          "name": "Hugging Face Transformers",
+          "level": "Learning"
+        },
+        {
+          "name": "scikit-learn",
+          "level": "Learning"
+        }
+      ]
+    },
+    {
+      "title": "ML & Data Foundations",
+      "skills": [
+        {
+          "name": "Statistics & Probability",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Linear Algebra Basics",
+          "level": "Learning"
+        },
+        {
+          "name": "Data Annotation & Evaluation",
+          "level": "Intermediate"
+        },
+        {
+          "name": "PyTorch / TensorFlow (foundations)",
+          "level": "Learning"
+        }
+      ]
+    },
+    {
+      "title": "Applied Language Technology",
+      "skills": [
+        {
+          "name": "Machine Translation",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Sentiment Analysis",
+          "level": "Learning"
+        },
+        {
+          "name": "Conversational AI / Chatbots",
+          "level": "Learning"
+        },
+        {
+          "name": "AI Ethics in NLP",
+          "level": "Intermediate"
+        }
+      ]
+    },
+    {
+      "title": "Professional",
+      "skills": [
+        {
+          "name": "Academic Writing & Research",
+          "level": "Proficient"
+        },
+        {
+          "name": "Teaching & Curriculum Design",
+          "level": "Proficient"
+        },
+        {
+          "name": "English–Persian Translation",
+          "level": "Proficient"
+        }
+      ]
+    }
+  ],
   "skills": [
     "Semantics",
     "Computational Linguistics",
     "Psycholinguistics",
-    "Programming",
+    "Morphology & Syntax",
+    "Phonetics & IPA",
+    "Corpus Linguistics",
+    "Natural Language Processing",
+    "Language Technology",
     "Python",
+    "NLTK",
+    "spaCy",
+    "Hugging Face Transformers",
+    "scikit-learn",
+    "Git & GitHub",
+    "Jupyter Notebooks",
+    "Regex",
+    "Statistics & Probability",
+    "Data Annotation & Evaluation",
+    "Machine Translation",
+    "AI Ethics in NLP",
+    "Programming",
     "Javascript",
     "HTML",
     "CSS",
     "Teaching",
     "Translation",
-    "Language Instruction",
-    "Natural Language Processing",
-    "Language Technology"
+    "Language Instruction"
   ]
 }
