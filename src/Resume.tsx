@@ -16,8 +16,33 @@ import {
   Stack,
   Link,
 } from '@mui/material';
-import { School, Work, CheckCircle, LocationOn, Email, LinkedIn, Language } from '@mui/icons-material';
+import { School, Work, CheckCircle, LocationOn, Email, LinkedIn, Language, Psychology, Code, SmartToy, Analytics, RecordVoiceOver, Group } from '@mui/icons-material';
 import resumeData from './resume.data.json';
+
+interface SkillItem {
+  name: string;
+  level: 'Proficient' | 'Intermediate' | 'Learning' | string;
+}
+
+interface SkillGroup {
+  title: string;
+  skills: SkillItem[];
+}
+
+const groupIcons: Record<string, React.ReactNode> = {
+  'Core Linguistics': <Psychology color="info" sx={{ mr: 1 }} />,
+  'Programming & Tools': <Code color="info" sx={{ mr: 1 }} />,
+  'NLP Libraries': <SmartToy color="info" sx={{ mr: 1 }} />,
+  'ML & Data Foundations': <Analytics color="info" sx={{ mr: 1 }} />,
+  'Applied Language Technology': <RecordVoiceOver color="info" sx={{ mr: 1 }} />,
+  Professional: <Group color="info" sx={{ mr: 1 }} />,
+};
+
+function levelProps(level: string): { color: 'primary' | 'info' | 'default'; variant: 'filled' | 'outlined' } {
+  if (level === 'Proficient') return { color: 'primary', variant: 'filled' };
+  if (level === 'Intermediate') return { color: 'info', variant: 'outlined' };
+  return { color: 'default', variant: 'outlined' };
+}
 
 const Resume: React.FC = () => {
   return (
@@ -164,7 +189,39 @@ const Resume: React.FC = () => {
         <Divider sx={{ my: 3 }} />
 
         <Typography variant="h6" gutterBottom sx={{ color: '#1976d2' }}>
-          Skills
+          Computational Linguistics Skills
+        </Typography>
+        <Typography variant="body2" color="text.secondary" paragraph>
+          Researched from current Computational Linguist job requirements — grouped so recruiters can scan in seconds.
+        </Typography>
+        <Stack spacing={2} sx={{ mb: 3 }}>
+          {((resumeData as unknown as { skillGroups: SkillGroup[] }).skillGroups ?? []).map((group) => (
+            <Box key={group.title}>
+              <Box display="flex" alignItems="center" sx={{ mb: 1 }}>
+                {groupIcons[group.title] ?? <CheckCircle color="info" sx={{ mr: 1 }} />}
+                <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                  {group.title}
+                </Typography>
+              </Box>
+              <Box display="flex" flexWrap="wrap" gap={1}>
+                {group.skills.map((skill) => {
+                  const { color, variant } = levelProps(skill.level);
+                  return (
+                    <Chip
+                      key={skill.name}
+                      label={`${skill.name} · ${skill.level}`}
+                      color={color}
+                      variant={variant}
+                      title={`${skill.name} — ${skill.level}`}
+                    />
+                  );
+                })}
+              </Box>
+            </Box>
+          ))}
+        </Stack>
+        <Typography variant="subtitle2" gutterBottom sx={{ color: '#1976d2' }}>
+          All skills (ATS keywords)
         </Typography>
         <Box display="flex" flexWrap="wrap" gap={1}>
           {resumeData.skills.map((skill, index) => (
