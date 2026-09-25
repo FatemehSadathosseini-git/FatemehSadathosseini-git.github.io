@@ -132,7 +132,7 @@ const Resume: React.FC = () => {
             slotProps={{
               img: {
                 style: { objectFit: 'cover', objectPosition: '50% 18%' },
-              } as React.CSSProperties,
+              },
             }}
           >
             <img src="avatar.jpeg" alt="Profile photo of Fatemeh Sadat Hosseini" />
