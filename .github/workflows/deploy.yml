@@ -35,12 +35,6 @@ jobs:
       - name: Build the React app (Vite only — no tsc gate so one unused import can't red-screen Pages)
         run: npx vite build
 
-      - name: Copy static fallback into dist (root index + avatar mirrored by build)
-        run: |
-          ls -la dist
-          cp index.html dist/index.html
-          ls -la dist | head -30
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
